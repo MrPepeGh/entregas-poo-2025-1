@@ -1,7 +1,7 @@
 class Matriz:
     def __init__(self, valores):
         if len(valores) != 2 or any(len(fila) != 2 for fila in valores):
-            raise ValueError("La matriz debe ser 2x2.")
+            raise ValueError
         self.valores = [[int(c) for c in fila] for fila in valores]
     def __add__(self, otra):
         resultado = [
